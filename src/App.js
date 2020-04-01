@@ -1,13 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import JSX from './components/JSX';
-import Home from './components/Home';
-import Components from './components/Components';
-import StateAndLifecycle from './components/StateAndLifecycle';
-import EventHandling from './components/EventHandling';
-import ConditionalRendering from './components/ConditionalRendering';
+import JSX from "./components/JSX";
+import Home from "./components/Home";
+import Components from "./components/Components";
+import StateAndLifecycle from "./components/StateAndLifecycle";
+import EventHandling from "./components/EventHandling";
+import ConditionalRendering from "./components/ConditionalRendering";
+import ListAndKey from "./components/ListAndKey";
+import Form from "./components/Form";
+import ComponentsComposition from "./components/ComponentsComposition";
+import CodeSplitting from './components/CodeSplitting';
 
 const routes = [
   {
@@ -23,23 +27,43 @@ const routes = [
   },
   {
     path: "/components",
-    title: 'Components and Props',
-    content: <Components />
+    title: "Components and Props",
+    content: <Components />,
   },
   {
-    path: '/stateandlifecycle',
+    path: "/stateandlifecycle",
     title: "State and Lifecycle",
-    content: <StateAndLifecycle />
+    content: <StateAndLifecycle />,
   },
   {
     path: "/eventhandling",
     title: "Event Handling",
-    content: <EventHandling />
+    content: <EventHandling />,
   },
   {
     path: "/conditionalrendering",
     title: "Conditional Rendering",
-    content: <ConditionalRendering />
+    content: <ConditionalRendering />,
+  },
+  {
+    path: "/listandkey",
+    title: "List and Key",
+    content: <ListAndKey />,
+  },
+  {
+    path: "/form",
+    title: "Form",
+    content: <Form />,
+  },
+  {
+    path: "/composition",
+    title: "Components Composition",
+    content: <ComponentsComposition />,
+  },
+  {
+    path: "/codesplitting",
+    title: "Code Splitting",
+    content: <CodeSplitting />
   }
 ];
 
