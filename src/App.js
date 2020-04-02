@@ -11,7 +11,13 @@ import ConditionalRendering from "./components/ConditionalRendering";
 import ListAndKey from "./components/ListAndKey";
 import Form from "./components/Form";
 import ComponentsComposition from "./components/ComponentsComposition";
-import CodeSplitting from './components/CodeSplitting';
+import CodeSplitting from "./components/CodeSplitting";
+import Context from "./components/Context";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Ref from "./components/Ref";
+import Portal from "./components/Portal";
+import RenderProps from "./components/RenderProps";
+import UncontrolledComponents from "./components/UncontrolledComponents";
 
 const routes = [
   {
@@ -63,7 +69,37 @@ const routes = [
   {
     path: "/codesplitting",
     title: "Code Splitting",
-    content: <CodeSplitting />
+    content: <CodeSplitting />,
+  },
+  {
+    path: "/context",
+    title: "Context",
+    content: <Context />,
+  },
+  {
+    path: "/errorboundary",
+    title: "Error Boundary",
+    content: <ErrorBoundary />,
+  },
+  {
+    path: "/ref",
+    title: "Ref",
+    content: <Ref />,
+  },
+  {
+    path: "/portal",
+    title: "Portal",
+    content: <Portal />,
+  },
+  {
+    path: "/renderprops",
+    title: "Render Props",
+    content: <RenderProps />,
+  },
+  {
+    path: "/uncontrolledcomponents",
+    title: "Uncontrolled Components",
+    content: <UncontrolledComponents />
   }
 ];
 
