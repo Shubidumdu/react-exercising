@@ -2,7 +2,7 @@ import React from 'react';
 import Example from './Example';
 import styled from 'styled-components';
 
-function Example1 () {
+export function Example1 () {
   const title = "JSX에 표현식 넣기"
 
   function formatName(user) {

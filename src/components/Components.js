@@ -1,7 +1,7 @@
 import React from 'react';
 import Example from './Example';
 
-function Example1() {
+export function Example1() {
   const title = "props 받기!"
 
   function GetProps(props) {

@@ -18,6 +18,7 @@ import Ref from "./components/Ref";
 import Portal from "./components/Portal";
 import RenderProps from "./components/RenderProps";
 import UncontrolledComponents from "./components/UncontrolledComponents";
+import DataFetch from "./components/DataFetch";
 
 const routes = [
   {
@@ -99,8 +100,13 @@ const routes = [
   {
     path: "/uncontrolledcomponents",
     title: "Uncontrolled Components",
-    content: <UncontrolledComponents />
-  }
+    content: <UncontrolledComponents />,
+  },
+  {
+    path: "/datafetch",
+    title: "Data Fetching",
+    content: <DataFetch />,
+  },
 ];
 
 function App() {

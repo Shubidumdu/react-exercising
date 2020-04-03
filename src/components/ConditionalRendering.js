@@ -104,7 +104,7 @@ function Example2() {
   );
 }
 
-function Example3() {
+export function Example3() {
   const title = "컴포넌트 렌더링 막기";
 
   function WarningBanner({ warn }) {
@@ -136,7 +136,7 @@ function Example3() {
       return (
         <div>
           <WarningBanner warn={this.state.showWarning} />
-          <button onClick={this.handleToggleClick}>
+          <button id="example3" onClick={this.handleToggleClick}>
             {this.state.showWarning ? "Hide" : "Show"}
           </button>
         </div>
